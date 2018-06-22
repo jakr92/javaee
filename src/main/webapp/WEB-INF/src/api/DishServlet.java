@@ -41,7 +41,7 @@ public class DishServlet extends HttpServlet {
         Dish dish1 = gson.fromJson(reader,Dish.class);
 
 
-        String databaseUrl = "jdbc:postgresql://localhost:5432/postgres?user=postgres&password=postgres";
+        String databaseUrl = "jdbc:postgres://ejchljlwiuhyqd:0d6989772b83395f98a4e4f28163dbaaa139aade2ad8f83454467e375bf636cc@ec2-54-247-100-44.eu-west-1.compute.amazonaws.com:5432/d92ue036af10cq";
 try {
     ConnectionSource connectionSource =
             new JdbcConnectionSource(databaseUrl);
